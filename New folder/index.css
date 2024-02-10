@@ -1,0 +1,331 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+*a{
+color: white;
+}
+*::after, ::before {
+    box-sizing: border-box;
+  }
+:root{
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+:root{
+    --bs-blue: #0d6efd;
+--bs-indigo: #6610f2;
+--bs-purple: #6f42c1;
+--bs-pink: #d63384;
+--bs-red: #dc3545;
+--bs-orange: #fd7e14;
+--bs-yellow: #ffc107;
+--bs-green: #198754;
+--bs-teal: #20c997;
+--bs-cyan: #0dcaf0;
+--bs-white: #fff;
+--bs-gray: #6c757d;
+--bs-gray-dark: #343a40;
+--bs-gray-100: #f8f9fa;
+--bs-gray-200: #e9ecef;
+--bs-gray-300: #dee2e6;
+--bs-gray-400: #ced4da;
+--bs-gray-500: #adb5bd;
+--bs-gray-600: #6c757d;
+--bs-gray-700: #495057;
+--bs-gray-800: #343a40;
+--bs-gray-900: #212529;
+--bs-primary: #0d6efd;
+--bs-secondary: #6c757d;
+--bs-success: #198754;
+--bs-info: #0dcaf0;
+--bs-warning: #ffc107;
+--bs-danger: #dc3545;
+--bs-light: #f8f9fa;
+--bs-dark: #212529;
+}
+.display{
+    display: flex;
+}
+.display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin{
+    margin:0 20px;
+}
+.border-radius{
+    border-radius: 50%;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background: url('http://www.themezaa.com/html/pofo/images/coming-soon-img2.jpg');
+    position: relative !important;
+    background-size: cover !important;
+    overflow: hidden !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+   position: relative;
+}
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font: 18px/1.5 var(--zf-primary-regular), sans-serif; /* font-size/line-height font-family, secondary font name */
+    color: var(--primary-color);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.container{
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+}
+.class{
+    font-size: 40px;
+    color: red;
+    font-weight: 900;
+}
+.center-div{
+    width: 70%;
+    height: 90%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+h1{
+    margin: 2rem 0;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    text-decoration: line-through red;
+}
+i{
+    color: white;
+    list-style: none;
+    font-size: 25px;
+    z-index: 100000;
+}
+.list{
+    align-items: flex-end;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 50%;
+    height: 40px;
+}
+.social-media-div{
+    width: 100%;
+    height: 8%;
+    color: white;
+    margin-bottom: 2rem;
+}
+.buyTheme{
+    width: 100%;
+    position: relative;
+    position: absolute;
+    top:100px;
+    height: 30px;
+}
+.left-transition-div{
+    width: 50px;
+    float: right;
+    color: black;
+    transition: 0.2s;
+    height: 30px;
+    background-color: aliceblue;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.left-transition-div span{
+max-width: 50px;
+white-space: nowrap;
+display: none;
+}
+.left-transition-div .svg1{
+    fill: #495057;  
+    width: 20px;
+    font-weight: 100;
+    margin-right: 5px;
+    transform: rotatey(150deg);
+}
+.left-transition-div:hover span{
+    display: flex;
+    font-size: small;
+}
+.left-transition-div:hover{
+    width: 110px;
+    background-color: red;
+    color: white;
+    font-size: 9px;
+}
+.left-transition-div a:hover{
+    color: white;
+}
+.left-transition-div:hover .svg1{
+    fill: white;
+}
+.left-transition-div1{
+    width: 50px;
+    float: right;
+    color: black;
+    transition: 0.2s;
+    height: 30px;
+    padding: 6px;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+.left-transition-div1 span{
+    max-width: 50px;
+    white-space: nowrap;
+    display: none;
+}
+.left-transition-div1 i{
+    color:#343a40;
+    font-size: medium;
+    font-weight: 100;
+    margin-right: 5px;
+}
+.left-transition-div1:hover{
+    width: 150px;
+    background-color: red;
+    color: white;
+    font-size: 9px;
+}
+.left-transition-div1 a{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.left-transition-div1 a:hover{
+    color: white;
+}
+.left-transition-div1:hover i{
+    color: white;
+}
+.left-transition-div1:hover span{
+    display: flex;
+    font-size: small;
+}
+.email-box{
+    width: 100%;
+    position: relative;
+    position: absolute;
+    top: 150px;
+    height: 30px;
+}
+.div-icon .display{
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 100%;
+}
+.fb{
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+.fb:hover{
+    width: 40px;
+    height: 40px;
+    background-color: #007bffa5;
+    border-radius: 50%;
+}
+.tw{
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+}
+.tw:hover{
+    width: 45px;
+    height: 45px;
+    background-color: #0d6efd;
+}
+.gl{
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+}
+.gl:hover{
+    width: 45px;
+    height: 45px;
+    background-color: #dc3545;
+}
+.ba{
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+}
+.ba:hover{
+    width: 45px;
+    height: 45px;
+    background-color: #d63384;
+}
+.lin{
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+}
+.lin:hover{
+    width: 45px;
+    height: 45px;
+    background-color: #0d6efd;
+}
+.left-transition-div a{
+        width: 100%;
+        height: 100%;
+        padding: 6px;
+    }
+.left-transition-div1 a{
+        width: 100%;
+        height: 100%;
+
+}
+@media only screen and (max-width: 900px) {
+    h1{
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width:600px) {
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .email-box{
+        display: none;
+    }
+    .buyTheme{
+        display: none;
+    }
+}

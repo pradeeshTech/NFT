@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  button{
+    background-color: rgb(69, 36, 235);
+    width: 100px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+  }
+  .red{
+    color: red;
+  }
+</style>
+<body>
+
+  <button class="like_btn">
+   <span class="icon"><i class="fa-regular fa-heart"></i></span>
+   <!-- <span id="icon2"><i class="fa-solid fa-heart"></i></span> -->
+   <span class="count">90</span>
+  </button>
+
+  <!-- <button class="like_btn">
+    <span class="icon"><i class="fa-regular fa-heart"></i></span>
+    <!-- <span id="icon2"><i class="fa-solid fa-heart"></i></span> -->
+    <!-- <span class="count">90</span>
+   </button> --> -->
+<!-- 
+   <button class="like_btn">
+    <span class="icon"><i class="fa-regular fa-heart"></i></span>
+     <span id="icon2"><i class="fa-solid fa-heart"></i></span> -->
+    <!-- <span class="count">90</span>
+   </button>  -->
+  <script>
+    const likebtn  =document.querySelector(".like_btn");
+    const likeicon =document.querySelector(".icon");
+    const count = document.querySelector(".count");
+    
+
+    let clicked = false;
+    likebtn.addEventListener("click",()=>{
+      if(!clicked){
+        clicked =true;
+        likeicon.innerHTML =`<i class="fa-solid fa-heart"></i>`;
+        likeicon.classList.add("red");
+
+        // likeicon.style.display="none";
+        // likeicon.style.display ="flex";
+        // document.querySelector(".icon").className = '<i class="fa-regular fa-heart"></i>';
+      
+        count.textContent++;
+        // '<i class="fa-regular fa-heart"></i>'
+
+      }
+      else{
+        clicked=false;
+        // document.querySelector(".icon").className ='<i class="fa-solid fa-heart"></i>';
+        likeicon.innerHTML  = `<i class="fa-regular fa-heart"></i>`;
+        likeicon.classList.remove("red");
+        count.textContent--;
+        // '<i class="fa-solid fa-heart"></i>'
+      }
+
+
+// if (likeicon.classList.contains("fa-regular fa-heart")) {
+
+//   likeicon.classList.add("fa-solid fa-heart")
+
+//   } else {
+
+//     likeicon.classList.add("fa-regular fa-heart")
+//   }
+
+    })
+  </script>
+</body>
+</html>
